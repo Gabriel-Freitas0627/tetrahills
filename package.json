@@ -1,0 +1,35 @@
+{
+  "name": "commerce",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "site",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build --scope=next-commerce --include-dependencies --no-deps",
+    "dev": "turbo run dev",
+    "start": "turbo run start",
+    "types": "turbo run types",
+    "prettier-fix": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/react-image-gallery": "^1.0.5",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1",
+    "turbo": "^1.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "turbo run lint"
+    }
+  },
+  "packageManager": "yarn@1.22.17",
+  "dependencies": {
+    "keen-slider": "^6.6.12",
+    "react-image-gallery": "^1.2.8",
+    "react-range": "^1.8.12",
+    "react-responsive": "^9.0.0-beta.8",
+    "rn-range-slider": "^2.1.1"
+  }
+}

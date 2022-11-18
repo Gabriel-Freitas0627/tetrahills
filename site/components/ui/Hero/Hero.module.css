@@ -1,0 +1,30 @@
+.root {
+  @apply grid grid-cols-1 md:grid-cols-2;
+}
+
+.title {
+  @apply text-center font-medium text-3xl;
+}
+
+.description {
+  @apply mt-5 text-xl px-0 md:px-28;
+}
+
+/* @screen lg {
+  .root {
+    @apply flex-row items-start justify-center py-32;
+  }
+  .title {
+    @apply text-5xl max-w-xl text-right leading-10 -mt-3;
+    line-height: 3.5rem;
+  }
+  .description {
+    @apply mt-0 ml-6;
+  }
+} */
+
+@screen xl {
+  .title {
+    @apply text-6xl;
+  }
+}

@@ -1,0 +1,20 @@
+.root {
+  @apply relative max-h-full w-full box-border overflow-hidden
+  bg-no-repeat bg-center bg-cover transition-transform
+  ease-linear cursor-pointer block;
+  height: 100% !important;
+}
+
+.root:hover {
+  & .productImage {
+    transform: scale(1.2625);
+  }
+}
+.imageContainer > div {
+  min-width: 100%;
+}
+
+.imageContainer .productImage {
+  @apply transform transition-transform duration-500
+  object-cover scale-120;
+}

@@ -1,0 +1,12 @@
+.fit {
+  min-height: calc(100vh - 88px);
+}
+
+@media only screen and (max-width: 768px) {
+  .collapse {
+    @apply max-h-0  transition-all duration-700 ease-in-out overflow-hidden;
+  }
+  .open {
+    @apply max-h-96 transition-all duration-1000 ease-in-out overflow-hidden;
+  }
+}

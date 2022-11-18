@@ -1,0 +1,22 @@
+.title {
+  @apply text-[30px] md:text-4xl text-[#161616] font-medium pb-10;
+}
+.productName {
+  @apply text-[15px] text-center md:text-2xl text-[#161616] md:pb-2;
+}
+.Size {
+  @apply text-center text-[10px] md:text-xl text-[#70877B] md:pb-2;
+}
+.price {
+  @apply text-center text-[15px] md:text-2xl text-[#161616];
+}
+.relatedProductsGrid {
+  @apply grid grid-cols-2 py-2 gap-2 md:grid-cols-4 md:gap-7;
+}
+.arrowSize {
+  width: 100%;
+  height: 1rem;
+}
+.arrowDisabled {
+  fill: #c9c9c9;
+}

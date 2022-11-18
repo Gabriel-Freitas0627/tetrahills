@@ -1,0 +1,63 @@
+.root {
+  @apply relative;
+}
+
+.button {
+  @apply h-10 px-2 rounded-md border border-accent-2 flex items-center justify-center transition-colors ease-linear;
+}
+
+.button:hover {
+  @apply border-accent-3 shadow-sm;
+}
+
+.button:focus {
+  @apply outline-none;
+}
+
+.dropdownMenu {
+  @apply fixed right-0 top-12 mt-2 origin-top-right outline-none bg-primary z-40 w-full h-full;
+}
+
+.item {
+  @apply flex cursor-pointer text-[#C9C9C9]  transition ease-in-out duration-150 leading-6 font-medium items-center;
+  text-transform: capitalize;
+}
+
+.langActive {
+  @apply text-[#161616];
+}
+.langs > li {
+  @apply px-2;
+}
+.langs > li:last-child {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    background: #161616;
+    height: 20px;
+  }
+}
+
+.icon {
+  transition: transform 0.2s ease;
+}
+
+.icon.active {
+  transform: rotate(180deg);
+}
+
+@screen lg {
+  .dropdownMenu {
+    @apply absolute border border-accent-1 shadow-lg w-56 h-auto;
+  }
+}
+
+@screen md {
+  .closeButton {
+    @apply hidden;
+  }
+}
